@@ -2,8 +2,8 @@
 
 ## Step 01:
 
-# git clone https://github.com/your-org/tem_service
-# git clone https://github.com/your-org/light_serice
+# git clone [temperature-service](https://github.com/Scalable-servicesproject4455/temperature-service.git)
+# git clone [assisstant-service](https://github.com/Scalable-servicesproject4455/assistant-service.git)
 
 ## Step 02:
 # docker-compose up --build
