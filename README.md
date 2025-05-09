@@ -7,3 +7,7 @@
 
 ## Step 02:
 # docker-compose up --build
+
+#APIs For Testing
+# http://127.0.0.1:5050/publish - post call
+# http://127.0.0.1:5050/api/createAndGetData - get call
