@@ -1,12 +1,11 @@
 # Deployment-repo
 
-## Step 01:
+## To run without Logs in the Terminal
+#### Run deploy.sh
 
-#### git clone [temperature-service](https://github.com/Scalable-servicesproject4455/temperature-service.git)
-#### git clone [assisstant-service](https://github.com/Scalable-servicesproject4455/assistant-service.git)
-
-## Step 02:
-#### docker-compose up --build
+## To run with logs in the Terminal:
+#### Run deployWithLogs.sh
+#### Run docker-compose up --build
 
 ## APIs For Testing
 #### http://127.0.0.1:5050/publish - post call
