@@ -29,7 +29,7 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-
+ 
   temperature-service:
     build:
       context: ./temperature-service
@@ -41,7 +41,7 @@ services:
         condition: service_healthy
       mysql:
         condition: service_healthy
-
+ 
   assistant-service:
     build:
       context: ./assistant-service
@@ -53,8 +53,8 @@ services:
         condition: service_healthy
       mysql:
         condition: service_healthy
-
- light-service:
+ 
+  light-service:
     build:
       context: ./light-service
     container_name: light-service
@@ -65,7 +65,7 @@ services:
         condition: service_healthy
       mysql:
         condition: service_healthy
-  
+ 
   mysql:
     image: mysql:8.0
     container_name: mysql-db
@@ -81,9 +81,7 @@ services:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
       retries: 5
-
-
+ 
+ 
 volumes:
   mysql-data:
-
-
