@@ -30,5 +30,5 @@ echo "✅ All repositories cloned fresh."
 echo "🐳 Cleaning up old containers"
 docker-compose down  # Clean up old containers
 echo "🐳 Starting services with Docker Compose..."
-docker-compose up --build -d
+docker-compose up --build
 
