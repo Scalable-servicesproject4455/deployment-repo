@@ -53,6 +53,18 @@ services:
         condition: service_healthy
       mysql:
         condition: service_healthy
+
+   light-service:
+    build:
+      context: ./light-service
+    container_name: light-service
+    ports:
+      - "3000:3000"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      mysql:
+        condition: service_healthy
   
   mysql:
     image: mysql:8.0
