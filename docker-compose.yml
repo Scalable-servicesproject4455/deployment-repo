@@ -54,7 +54,7 @@ services:
       mysql:
         condition: service_healthy
 
-   light-service:
+ light-service:
     build:
       context: ./light-service
     container_name: light-service
