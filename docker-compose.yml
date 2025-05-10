@@ -71,7 +71,7 @@ services:
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: temp_db, security_db, light_db
+      MYSQL_DATABASE: temp_db
     ports:
       - "3306:3306"
     volumes:
