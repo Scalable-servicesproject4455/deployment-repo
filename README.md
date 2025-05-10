@@ -1,7 +1,7 @@
 # Deployment-repo
 
-## To run without Logs in the Terminal
-#### 1. Run deploy.sh
+## To run all services
+#### 1. Run -> chmod +x ./deploy.sh
 
 ## To run with logs in the Terminal:
 #### 1. Run deployWithLogs.sh
