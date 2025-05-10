@@ -28,6 +28,9 @@ echo "✅ All repositories cloned fresh."
 
 # Step 02: Start services with Docker Compose
 echo "🐳 Cleaning up old containers"
+docker-compose down --remove-orphans
+docker container prune
+docker system prune -a --volumes
 docker-compose down  # Clean up old containers
 echo "🐳 Starting services with Docker Compose..."
 docker-compose up --build
